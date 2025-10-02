@@ -1,0 +1,8 @@
+torch>=2.8.0
+transformers>=4.55.3
+trl==0.22.2
+datasets
+bitsandbytes
+accelerate
+brightdata-sdk
+python-dotenv
