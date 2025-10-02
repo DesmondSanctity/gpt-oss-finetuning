@@ -27,20 +27,20 @@ python main.py --max-steps 100        # Train longer
 ```
 
 Requirements
-
-GPU: 16GB+ VRAM (T4, V100, A100)
-Python: 3.8+
-CUDA: 11.8+
+- GPU: 16GB+ VRAM (T4, V100, A100)
+- Python: 3.8+
+- CUDA: 11.8+
 
 Features
+- ✅ 2x faster training with Unsloth
+- ✅ Runs on free Colab T4 GPU
+- ✅ LoRA fine-tuning (only 1% parameters)
+- ✅ Reasoning effort control (low/medium/high)
+- ✅ Automatic data collection with Bright Data
 
-✅ 2x faster training with Unsloth
-✅ Runs on free Colab T4 GPU
-✅ LoRA fine-tuning (only 1% parameters)
-✅ Reasoning effort control (low/medium/high)
-✅ Automatic data collection with Bright Data
 
 Project Structure
+```bash
 src/
 ├── 01_setup.py         # Environment check
 ├── 02_model_loader.py  # Load GPT-OSS
@@ -51,11 +51,11 @@ src/
 ├── 07_training.py      # Train model
 ├── 08_model_tester.py  # Test with reasoning levels
 └── 09_model_saver.py   # Save to disk/HF Hub
+```
 
 API Keys Required
-
-Bright Data: Get API token
-Hugging Face: Create token
+- Bright Data: Get API token
+- Hugging Face: Create token
 
 Run Individual Steps
 ```python
@@ -78,12 +78,12 @@ Performance
 | Parameters    | <1% (LoRA)           |
 
 Links
-- Unsloth Documentation
-- Bright Data
-- Original Article
+- [Unsloth Documentation](https://docs.unsloth.ai/)
+- [Bright Data](https://brightdata.com/solutions/ai)
+- [GPT-OSS](https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4)
 
 License
-MIT
+- [MIT](/LICENSE)
 
 This structure provides:
 
